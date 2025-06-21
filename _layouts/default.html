@@ -1,11 +1,11 @@
-<head>
-    <link rel="stylesheet" href="projects.css" />
-  </head>
-  <body>
+<body>
     <div id="navbar-placeholder"></div>
   
+    <!-- CONTENUTO PAGINA -->
+    {{ content }}
+  
     <script>
-      fetch('navbar.html')
+      fetch('{{ "/navbar.html" | relative_url }}')
         .then(response => response.text())
         .then(data => {
           document.getElementById('navbar-placeholder').innerHTML = data;
@@ -28,24 +28,5 @@
         en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
       }
     </script>
-
-
----
-layout: default
-title: Scrum Portfolio
----
-
-<h1>Scrum Portfolio</h1>
-
-<div class="cv-section" style="max-width:900px; margin:auto;">
-  <ul>
-    {% assign scrum_posts = site.posts | where_exp:"post","post.layout == 'scrum-post'" | sort: 'date' | reverse %}
-    {% for post in scrum_posts %}
-      <li style="margin-bottom: 20px;">
-        <a href="{{ post.url }}" style="font-weight: bold; font-size: 1.2em; color:#007acc;">{{ post.title }}</a><br />
-        <small>Pubblicato il {{ post.date | date: "%d %B %Y" }}</small>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+  </body>
+  

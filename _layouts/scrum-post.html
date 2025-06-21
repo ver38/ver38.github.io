@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/projects.css" />
+  <style>
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 40px; max-width: 900px; color: #333; }
+    article { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    h1 { margin-bottom: 0.5em; }
+    a { color: #007acc; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <p><small>Pubblicato il {{ page.date | date: "%d %B %Y" }}</small></p>
+    <div>
+      {{ content }}
+    </div>
+    <p><a href="/scrum.html">← Torna allo Scrum Portfolio</a></p>
+  </article>
+</body>
+</html>

@@ -1,30 +1,19 @@
-<head>
-    <link rel="stylesheet" href="projects.css" />
-  </head>
-  <body>
-    <div id="navbar-placeholder"></div>
-  
-    <script>
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-  
-          const links = document.querySelectorAll('.nav-link');
-          const currentPage = window.location.pathname.split('/').pop();
-  
-          links.forEach(link => {
-            if (link.getAttribute('data-page') === currentPage) {
-              link.classList.add('active');
-            }
-          });
-        });
-  
-      function toggleLanguage() {
-        const it = document.querySelectorAll('.lang-it');
-        const en = document.querySelectorAll('.lang-en');
-  
-        it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
-        en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
-      }
-    </script>
+---
+layout: default
+title: Scrum Portfolio
+---
+
+<h1>Scrum Portfolio</h1>
+
+<div class="cv-section" style="max-width:900px; margin:auto;">
+  <ul>
+    {% assign scrum_posts = site.posts | where_exp:"post","post.layout == 'scrum-post'" | sort: 'date' | reverse %}
+    {% for post in scrum_posts %}
+      <li style="margin-bottom: 20px;">
+        <a href="{{ post.url }}" style="font-weight: bold; font-size: 1.2em; color:#007acc;">{{ post.title }}</a><br />
+        <small>Pubblicato il {{ post.date | date: "%d %B %Y" }}</small>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
