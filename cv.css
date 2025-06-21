@@ -69,26 +69,31 @@
 }
 
 .cv-skills {
+  margin-top: 12px;
+}
+
+.cv-skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.cv-skills li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  justify-content: flex-start;
-  margin-top: 10px;
+  gap: 6px;
 }
 
-.cv-skills span {
-  background-color: #007893;
-  color: #ffffff;
-  padding: 8px 14px;
-  font-size: 14px;
-  border-radius: 20px;
-  white-space: nowrap;
-  transition: background-color 0.2s ease;
+.cv-skills li .label {
+  font-weight: 700;
+  color: #007893;
+  min-width: 110px;
+  flex-shrink: 0;
 }
 
-.cv-skills span:hover {
-  background-color: #005f70;
-}
 
 .cv-languages ul,
 .cv-certifications ul {
@@ -107,6 +112,7 @@
   gap: 6px;
 }
 
+.cv-skills li .label,
 .cv-education li .label,
 .cv-languages li .label,
 .cv-certifications li .label,
