@@ -1,0 +1,106 @@
+.cv-section {
+  max-width: 900px;
+  margin: 100px auto 60px;
+  padding: 40px;
+  background-color: #ffffff;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0.1, 0.1, 0.1, 0.10);
+}
+
+.cv-title {
+  font-size: 36px;
+  color: #007893;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cv-subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cv-section h2 {
+  font-size: 24px;
+  color: #007893;
+  margin-top: 50px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #00789322;
+  padding-bottom: 6px;
+}
+
+.cv-item {
+  margin-bottom: 24px;
+}
+
+.cv-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.cv-date {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.cv-description {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cv-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv-section ul li {
+  margin-bottom: 10px;
+}
+
+.cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cv-skills span {
+  background-color: #007893;
+  color: #fcf9f2;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.cv-languages, .cv-certifications {
+  font-size: 15px;
+}
+
+.cv-education .cv-item,
+.cv-projects .cv-item {
+  border-left: 4px solid #00789333;
+  padding-left: 12px;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 24px;
+  background-color: #007893;
+  color: #fcf9f2;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+}
+
+.btn-download:hover {
+  background-color: #005f70;
+}
