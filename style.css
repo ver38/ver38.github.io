@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #fcf9f2;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fcf9f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-weight: bold; 
+    font-size: 22px;
+    font-style: italic;
+    color: #007893;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #007893;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero-box {
+    background-color: #007893;
+    color: #fcf9f3;
+    width: 80%;
+    max-width: 1000px;
+    margin: 80px auto;
+    border-radius: 24px;
+    padding: 40px 60px; 
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .hero-box h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    justify-content: flex-start;
+  }
+
+  .initial {
+    font-size: 46px;       
+    font-weight: 550;
+    letter-spacing: 0.5px;  
+  }
+  
+  
+  .hero-box h2 {
+    font-size: 19px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .hero-box h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+  
+  .hero-box .divider {
+    max-width: 200px;
+    height: 0.5px;
+    background-color: #fcf9f3;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .hero-box {
+      margin: 60px 20px;
+      padding: 40px 20px;
+    }
+  
+    .hero-box h1 {
+      font-size: 28px;
+    }
+  
+    .hero-box h2 {
+      font-size: 16px;
+    }
+
+    .nav-link.active {
+        text-decoration: underline;
+        font-weight: bold;
+        color: #005f73;
+      }
+      
+  }
+  
