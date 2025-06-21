@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+  
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+  
+          const links = document.querySelectorAll('.nav-link');
+          const currentPage = window.location.pathname.split('/').pop();
+  
+          links.forEach(link => {
+            if (link.getAttribute('data-page') === currentPage) {
+              link.classList.add('active');
+            }
+          });
+        });
+  
+      function toggleLanguage() {
+        const it = document.querySelectorAll('.lang-it');
+        const en = document.querySelectorAll('.lang-en');
+  
+        it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+        en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+      }
+    </script>
