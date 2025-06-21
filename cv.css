@@ -107,6 +107,7 @@
   gap: 6px;
 }
 
+.cv-education li .label,
 .cv-languages li .label,
 .cv-certifications li .label,
 .cv-projects li .label {
