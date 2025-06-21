@@ -1,7 +1,10 @@
 ---
-title: "Come facilitare uno sprint planning"
-date: 2025-06-21
 layout: scrum-post
+title: "Come migliorare lo sprint planning"
+date: 2025-06-21
 ---
 
-Lo sprint planning bla bla bla 
+Testo del post qui. Puoi scrivere contenuti in markdown.
+
+- Punto 1
+- Punto 2
