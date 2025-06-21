@@ -153,19 +153,4 @@
   padding-left: 12px;
 }
 
-.btn-download {
-  display: inline-block;
-  margin-top: 40px;
-  padding: 12px 24px;
-  background-color: #007893;
-  color: #fcf9f2;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 700;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.2s ease;
-}
 
-.btn-download:hover {
-  background-color: #005f70;
-}
