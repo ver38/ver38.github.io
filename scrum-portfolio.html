@@ -5,15 +5,16 @@ title: Scrum Portfolio
 
 <h1>Scrum Portfolio</h1>
 
-<div class="cv-section" style="max-width:900px; margin:auto;">
-  <ul>
+<div class="cv-section scrum-portfolio-list" style="max-width:900px; margin:auto;">
+  <ul class="scrum-posts">
     {% assign scrum_posts = site.posts | where_exp:"post","post.layout == 'scrum-post'" | sort: 'date' | reverse %}
     {% for post in scrum_posts %}
-      <li style="margin-bottom: 20px;">
-        <a href="{{ post.url }}" style="font-weight: bold; font-size: 1.2em; color:#007acc;">{{ post.title }}</a><br />
-        <small>Pubblicato il {{ post.date | date: "%d %B %Y" }}</small>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      <li class="scrum-post-item {% if forloop.first %}scrum-intro{% endif %}">
+        <a href="{{ post.url }}" class="scrum-post-title">{{ post.title }}</a><br />
+        <small class="scrum-post-date">Pubblicato il {{ post.date | date: "%d %B %Y" }}</small>
+        <p class="scrum-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
       </li>
     {% endfor %}
   </ul>
 </div>
+
