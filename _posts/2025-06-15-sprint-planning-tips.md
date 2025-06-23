@@ -1,7 +1,7 @@
 ---
 layout: scrum-post
-title: "Come migliorare lo sprint planning"
-date: 2025-06-21
+title: "Having a better Sprint Planning with User Story Slicing Game."
+date: 2025-05-14
 ---
 
 Testo del post qui. Puoi scrivere contenuti in markdown.

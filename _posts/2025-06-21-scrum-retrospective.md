@@ -1,11 +1,11 @@
 ---
 layout: scrum-post
 title: "Crafting a Retrospective "
-date: 2025-06-21
+date: 2025-05-29
 excerpt: "Traditional retrospectives often miss the mark in surfacing real team dynamics. This article introduces a Sprint Diagnostic + Mood Check template—a retrospective format designed to reconnect teams with empiricism, emotional insight, and actionable outcomes. Built for high-autonomy teams facing communication gaps and workflow stagnation."
 ---
 
-#  Retros as a Sprint ritual that fuels Team growth
+# Retros as a Sprint ritual that fuels Team growth
 
 Sprint retrospectives are often overlooked or reduced to box-checking rituals. Yet, they’re the perfect moment to let the soul of a team emerge—by creating connections and clarifying team dynamics.
 
@@ -95,7 +95,7 @@ That’s why we allocate time to:
 
 These aren’t abstract promises—they’re added to the backlog or logged as explicit process agreements. If needed, we update internal workflow documentation accordingly.
 
-**⚠️ Pro tip:**  
+**Pro tip:**  
 During this phase, avoid using voting techniques. Instead, favor open dialogue and facilitation that embraces both emotional and technical aspects. Ensure that everyone feels safe, heard, and included. Be mindful of sensitive topics that might fracture trust—gently redirect conversations when necessary to preserve team cohesion.
 
 ---
@@ -104,11 +104,11 @@ During this phase, avoid using voting techniques. Instead, favor open dialogue a
 
 This template is grounded in a few essential values:
 
-- **⏳ Time-boxed & focused:** Each section has a purpose and a timer.
-- **🧠 Psychological safety:** Every voice matters. One person speaks at a time.
-- **🔋 Energy awareness:** Burnout isn’t a badge of honour. Tensions should be addressed, not buried.
-- **🎯 Action orientation:** A retro without change is just talk.
-- **🧪 Empiricism & emotional awareness:**  
+- **Time-boxed & focused:** Each section has a purpose and a timer.
+- **Psychological safety:** Every voice matters. One person speaks at a time.
+- **Energy awareness:** Burnout isn’t a badge of honour. Tensions should be addressed, not buried.
+- **Action orientation:** A retro without change is just talk.
+- **Empiricism & emotional awareness:**  
   Emotions are valid—after all, we’re human beings, not machines. Acknowledging feelings builds trust and safety. However, it's vital to recognise that emotions and perceptions are subjective. Growth comes from distinguishing our internal reactions from observable facts. That awareness enables clearer communication, healthier conflict resolution, and delivery of true value.
 
 ---
@@ -121,5 +121,5 @@ With a little structure and a lot of intentionality, your team’s retros can ev
 
 ---
 
-**Template designed with care and context. Let it be a starting point, not a rigid script. Your team’s voice will always be the most important part of any retrospective.**
+**Let templates be a starting point, not a rigid script. Your team’s voice will always be the most important part of any retrospective.**
 
