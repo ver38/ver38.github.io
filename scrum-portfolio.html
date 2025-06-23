@@ -12,7 +12,7 @@ title: Scrum Portfolio
     {% for post in scrum_posts %}
       <li class="scrum-post-item styled-post">
         <a href="{{ post.url }}" class="scrum-post-title">{{ post.title }}</a><br />
-        <small class="scrum-post-date">Pubblicato il {{ post.date | date: "%d %B %Y" }}</small>
+        <small class="scrum-post-date">Date published: {{ post.date | date: "%d %B %Y" }}</small>
         <p class="scrum-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
       </li>
     {% endfor %}
