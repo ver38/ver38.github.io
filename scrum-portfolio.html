@@ -8,9 +8,9 @@ title: Scrum Portfolio
 <div class="cv-section scrum-portfolio-list" style="max-width:900px; margin:auto;">
   <!-- <h2 class="scrum-toc-title"> Table of Content:</h2> -->
   <ul class="scrum-posts">
-    {% assign scrum_posts = site.posts | where_exp:"post","post.layout == 'scrum-post'" | sort: 'date' | reverse %}
+{% assign scrum_posts = site.posts | sort: 'date' | reverse %}
     {% for post in scrum_posts %}
-      <li class="scrum-post-item {% if forloop.first %}scrum-intro{% endif %}">
+      <li class="scrum-post-item styled-post">
         <a href="{{ post.url }}" class="scrum-post-title">{{ post.title }}</a><br />
         <small class="scrum-post-date">Pubblicato il {{ post.date | date: "%d %B %Y" }}</small>
         <p class="scrum-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
