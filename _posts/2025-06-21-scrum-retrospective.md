@@ -7,7 +7,7 @@ excerpt: "Traditional retrospectives often miss the mark in surfacing real team 
 
 # Retros as a Sprint ritual that fuels Team growth
 
-Sprint retrospectives are often overlooked or reduced to box-checking rituals. Yet, they’re the perfect moment to let the soul of a team emerge—by creating connections and clarifying team dynamics.
+Sprint retrospectives are often overlooked or reduced to box-checking rituals. Yet, they’re the perfect moment to let the soul of a team emerge by creating connections and clarifying team dynamics.
 
 As a Scrum Master working with a high-autonomy team, I’ve found that traditional formats weren’t always enough to surface the *real stuff*: misalignments, subtle blockers, distractions, or simply disengaged team members who approached retrospectives passively. This often led to losing touch with **empiricism** and **fact-checking**, which are foundational pillars of Scrum.
 
@@ -21,10 +21,10 @@ Let me show you how it works.
 
 This retro combines two complementary lenses:
 
-- **Sprint Diagnostic** – to evaluate technical and behavioural challenges, celebrate achievements, and identify what should carry into the next sprint.
-- **Energy & Mood Check** – to measure the emotional and mental energy behind the work and guide the team into the next sprint with clarity.
+- **Sprint Diagnostic:** to evaluate technical and behavioural challenges, celebrate achievements, and identify what should carry into the next sprint.
+- **Energy & Mood Check:** to measure the emotional and mental energy behind the work and guide the team into the next sprint with clarity.
 
-Because successful sprints aren’t just about what we *did*, but also about how we *felt* doing it—and what that says about our team's overall health.
+Because successful sprints aren’t just about what we *did*, but also about how we *felt* doing it, and what that says about our team's overall health.
 
 At the end of both sessions, we generate **action items**, shaped directly from discussion and alignment during the retrospective.
 
@@ -32,13 +32,13 @@ At the end of both sessions, we generate **action items**, shaped directly from 
 
 ## 🧭 Template Overview
 
-The retrospective is divided into one **Guidelines** section and three **structured parts**, supported by clearly defined columns and time-boxed conversation prompts.
+The retrospective is divided into one **Guidelines** section and three **structured parts**, supported by clearly defined columns and timeboxed conversation prompts.
 
 ### 📝 Guidelines
 
 The **Guidelines** provide a common set of rules visible throughout the ceremony. They help the Scrum Master facilitate transitions, moderate conflict, and maintain alignment.
 
-You’ll also find a section with **General and Speaker Rules** to preserve clarity, inclusion, and respectful dialogue. In particular, it explicitly allows team members to express how events may have affected their mood—while also reminding them to **separate subjective feelings from objective facts**, in keeping with Scrum’s empirical foundation.
+You’ll also find a section with **General and Speaker Rules** to preserve clarity, inclusion, and respectful dialogue. In particular, it explicitly allows team members to express how events may have affected their mood, while also reminding them to **separate subjective feelings from objective facts**, in keeping with Scrum’s empirical foundation.
 
 ---
 
@@ -58,7 +58,7 @@ This section helps us reflect on performance, quality, and collaboration:
 - **List of current issues, risks, or challenges:**  
   Spot visible landmines, friction points, or blockers (10 min).
 
-**💡 Pro tip:** Use dot voting to prioritise which challenges deserve deeper discussion—*but only if it helps*. Not every retro benefits from voting.
+**💡 Pro tip:** Use dot voting to prioritise which challenges deserve deeper discussion, *but only if it helps*. Not every retro benefits from voting.
 
 ---
 
@@ -96,7 +96,7 @@ That’s why we allocate time to:
 These aren’t abstract promises—they’re added to the backlog or logged as explicit process agreements. If needed, we update internal workflow documentation accordingly.
 
 **Pro tip:**  
-During this phase, avoid using voting techniques. Instead, favor open dialogue and facilitation that embraces both emotional and technical aspects. Ensure that everyone feels safe, heard, and included. Be mindful of sensitive topics that might fracture trust—gently redirect conversations when necessary to preserve team cohesion.
+During this phase, avoid using voting techniques. Instead, favor open dialogue and facilitation that embraces both emotional and technical aspects. Ensure that everyone feels safe, heard, and included. Be mindful of sensitive topics that might fracture trust, try to gently redirect conversations when necessary to preserve team cohesion.
 
 ---
 
