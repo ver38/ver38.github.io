@@ -57,6 +57,44 @@
     color: #007893; 
     font-weight: 600;
   }
+
+  .styled-post {
+  border-left: 5px solid #007f96;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.styled-post:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.styled-post .scrum-post-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #007f96;
+  text-decoration: none;
+}
+
+.styled-post .scrum-post-title:hover {
+  text-decoration: underline;
+}
+
+.styled-post .scrum-post-date {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.styled-post .scrum-post-excerpt {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
   
   
   
