@@ -1,12 +1,11 @@
-
-<body>
+<head>
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
     <div id="navbar-placeholder"></div>
-    <link rel="stylesheet" href="/scrum-portfolio.css" />
-    <!-- CONTENUTO PAGINA -->
-    {{ content }}
   
     <script>
-      fetch('{{ "/navbar.html" | relative_url }}')
+      fetch('navbar.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('navbar-placeholder').innerHTML = data;
@@ -29,5 +28,21 @@
         en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
       }
     </script>
-  </body>
-  
+     <div class="language-switcher">
+        <button onclick="toggleLanguage()">Switch Language / Cambia Lingua</button>
+      </div>
+
+<h1>iOS Projects</h1>
+
+<div class="project-card">
+  <h2>Project One</h2>
+  <p>placeholder description 1.</p>
+</div>
+
+<div class="project-card">
+  <h2>Project Two</h2>
+  <p>placeholder description 1.</p>
+</div>
+
+
+    </body>

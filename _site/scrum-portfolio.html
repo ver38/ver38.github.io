@@ -1,0 +1,66 @@
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <link rel="stylesheet" href="/scrum-portfolio.css" />
+    <!-- CONTENUTO PAGINA -->
+    <h1 class="scrum-page-title">Scrum Portfolio</h1>
+
+<div class="cv-section scrum-portfolio-list" style="max-width:900px; margin:auto;">
+  <!-- <h2 class="scrum-toc-title"> Table of Content:</h2> -->
+  <ul class="scrum-posts">
+    
+    
+      <li class="scrum-post-item scrum-intro">
+        <a href="/2025/06/22/introduction.html" class="scrum-post-title">Il mio percorso da Scrum Master: una visione pragmatica e creativa</a><br />
+        <small class="scrum-post-date">Pubblicato il 22 June 2025</small>
+        <p class="scrum-post-excerpt">Chi sono, il mio approccio alla facilitazione e cosa troverai in questo Scrum Portfolio tra tecniche, retro, planning e strategie di mentoring.</p>
+      </li>
+    
+      <li class="scrum-post-item ">
+        <a href="/2025/06/21/sprint-planning-tips.html" class="scrum-post-title">Come migliorare lo sprint planning</a><br />
+        <small class="scrum-post-date">Pubblicato il 21 June 2025</small>
+        <p class="scrum-post-excerpt">Testo del post qui. Puoi scrivere contenuti in markdown.
+
+</p>
+      </li>
+    
+      <li class="scrum-post-item ">
+        <a href="/2025/06/21/scrum-retrospective.html" class="scrum-post-title">Come migliorare la retrospective</a><br />
+        <small class="scrum-post-date">Pubblicato il 21 June 2025</small>
+        <p class="scrum-post-excerpt">La retrospective è un momento cruciale per il team Agile. Ecco alcuni consigli per renderla coinvolgente e produttiva…
+
+</p>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+  
+    <script>
+      fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+  
+          const links = document.querySelectorAll('.nav-link');
+          const currentPage = window.location.pathname.split('/').pop();
+  
+          links.forEach(link => {
+            if (link.getAttribute('data-page') === currentPage) {
+              link.classList.add('active');
+            }
+          });
+        });
+  
+      function toggleLanguage() {
+        const it = document.querySelectorAll('.lang-it');
+        const en = document.querySelectorAll('.lang-en');
+  
+        it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+        en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+      }
+    </script>
+  </body>
+  

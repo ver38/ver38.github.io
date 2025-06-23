@@ -1,0 +1,48 @@
+
+  h1 {
+    font-size: 36px;
+    color: #007893;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .project-card {
+    background-color: #007893; /* teal, come l'hero-box */
+    color: #fcf9f3;            /* testo bianco avorio, come l'hero-box */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    margin: 32px auto;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+  
+    cursor: default;
+    transition: none;
+  }
+  
+  .project-card:hover {
+    /* Mantieni lo stile statico, niente trasformazioni */
+    transform: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Titoli più chiari per contrasto */
+  .project-card h2 {
+    color: #fcf9f3;  /* bianco avorio */
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  
+  /* Paragrafi coerenti */
+  .project-card p {
+    color: #fcf9f3;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  

@@ -1,0 +1,165 @@
+<head>
+  <link rel="stylesheet" href="cv.css" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+
+        const links = document.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname.split('/').pop();
+
+        links.forEach(link => {
+          if (link.getAttribute('data-page') === currentPage) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+    function toggleLanguage() {
+      const it = document.querySelectorAll('.lang-it');
+      const en = document.querySelectorAll('.lang-en');
+
+      it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+      en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+    }
+  </script>
+
+  <div class="language-switcher">
+    <button onclick="toggleLanguage()">Switch Language / Cambia Lingua</button>
+  </div>
+
+  <div class="cv-section">
+    <h1 class="cv-title lang-it">Curriculum Vitae</h1>
+    <h1 class="cv-title lang-en" style="display:none;">Resume</h1>
+
+    <section class="cv-bio">
+      <p class="lang-it">
+        Scrum Master con solide competenze nella facilitazione e nella leadership, esperta nel coaching e nella guida di team agili. Come sviluppatrice software, mi specializzo in Swift, programmazione orientata agli oggetti, database relazionali, C# e Unity. Affronto le sfide tecniche complesse con adattabilità e un approccio orientato alla soluzione. Le mie capacità comunicative e il mio impegno nell'apprendimento continuo fanno di me un membro affidabile e di valore per qualsiasi team di sviluppo.
+      </p>
+      <p class="lang-en" style="display:none;">
+        I'm a Scrum Master with strong facilitation and leadership skills, experienced in coaching and guiding agile teams. As a software developer, I specialize in Swift, object-oriented programming and relational databases. I approach complex technical challenges with adaptability and a solution-oriented mindset. My humanistic background, communication skills and commitment to continuous learning make me an original and valuable member of any development team.
+      </p>
+    </section>
+
+    <section class="cv-experience">
+      <h2 class="lang-it">Esperienza</h2>
+      <h2 class="lang-en" style="display:none;">Experience</h2>
+
+      <div class="cv-item">
+        <h3>iOS Full Stack developer and Scrum Master @ Pier Program – Apple Developer Academy UNINA, Naples, Italy</h3>
+        <span class="cv-date">06/2024 - 06/2025</span>
+        <p class="lang-it">Scrum Master di un team di sviluppo composto da 7 persone, con il compito di facilitare l’adozione di Scrum e supervisionare ceremonies e artifacts. Ho ricoperto il ruolo di Team Lead durante i test sul campo in India. In quanto Swift Developer, ho sviluppato applicazioni iOS e web su piattaforma FileMaker, contribuendo alle decisioni relative a product vision, UX e UI. Ho prestato attività di mentorship ai partecipanti del Foundation Program, guidandoli nello sviluppo delle loro App.</p>
+        <p class="lang-en" style="display:none;">Scrum Master of a 6 people development team, facilitating Scrum adoption and overseeing ceremonies and artifacts. Worked as Team Lead and Reference Point during on-site field testing in India. Developed iOS and FileMaker web apps, focusing on backend while contributing to frontend and design decisions. Provided mentorship for participants in the Foundation Program.</p>
+      </div>
+
+      <div class="cv-item">
+        <h3>Public Relations – Ateneapoli, Naples, Italy</h3>
+        <span class="cv-date">02/2018 - 04/2024</span>
+        <p class="lang-it">Supervisione di eventi di orientamento universitario presso l’Università degli Studi di Napoli Federico II e l’Università degli Studi della Campania Luigi Vanvitelli.</p>
+        <p class="lang-en" style="display:none;">Orchestrated technical and public relations for University Advising aimed to guide High School students in their path in university enrollment. Supervising events in Università degli studi di Napoli Federico II and Università degli Studi della Campania Luigi Vanvitelli.</p>
+      </div>
+
+      <div class="cv-item">
+        <h3>Social Worker – Cooperativa Sociale Proodos - Naples, Italy</h3>
+        <span class="cv-date">06/2022 – 06/2023</span>
+        <p class="lang-it">Ho fornito supporto ad attività educative rivolte a studenti con bisogni educativi speciali, in particolare a studenti con condizioni del neurosviluppo come lo spettro autistico. Competenze acquisite: empatia, apertura mentale, lavoro di squadra, creatività.</p>
+        <p class="lang-en" style="display:none;">Provided support for educational activities for students with special needs, particularly for students with neurodevelopmental conditions like Autism Spectrum. Skills learned: empathy, openness, teamwork, creativity.</p>
+      </div>
+    </section>
+
+    <section class="cv-education">
+      <h2 class="lang-it">Formazione</h2>
+      <h2 class="lang-en" style="display:none;">Education</h2>
+      <ul>
+        <li class="lang-it"><span class="label">Graduate,</span> Apple Developer Academy – Università degli Studi di Napoli Federico II, 2023</li>
+        <li class="lang-en" style="display:none;"><span class="label">Graduate</span> @ Apple Developer Academy – University of Naples Federico II, 2023</li>
+
+        <li class="lang-it"><span class="label">Laurea Triennale in Filosofia,</span> Università degli Studi di Napoli Federico II, 2018</li>
+        <li class="lang-en" style="display:none;"><span class="label">Bachelor’s Degree in Philosophy,</span> University of Naples Federico II, 2018</li>
+
+      </ul>
+    </section>
+
+    <section class="cv-skills">
+      <h2 class="lang-it">Competenze</h2>
+      <h2 class="lang-en" style="display:none;">Skills</h2>
+      <ul>
+        <li class="lang-it">
+          <span class="label">Linguaggi:</span> Swift, HTML, CSS, JavaScript
+        </li>
+        <li class="lang-en" style="display:none;">
+          <span class="label">Languages:</span> Swift, HTML, CSS, JavaScript
+        </li>
+    
+        <li class="lang-it">
+          <span class="label">Framework:</span> SwiftUI, Combine, UIKit
+        </li>
+        <li class="lang-en" style="display:none;">
+          <span class="label">Frameworks:</span> SwiftUI, Combine, UIKit
+        </li>
+    
+        <li class="lang-it">
+          <span class="label">Strumenti:</span> Xcode, Git, Jira, Confluence
+        </li>
+        <li class="lang-en" style="display:none;">
+          <span class="label">Tools:</span> Xcode, Git, Jira, Confluence
+        </li>
+    
+        <li class="lang-it">
+          <span class="label">Soft Skills:</span> Comunicazione, Leadership, Pensiero critico
+        </li>
+        <li class="lang-en" style="display:none;">
+          <span class="label">Soft Skills:</span> Communication, Leadership, Critical Thinking
+        </li>
+      </ul>
+    </section>
+    
+
+    <section class="cv-languages">
+      <h2 class="lang-it">Lingue</h2>
+      <h2 class="lang-en" style="display:none;">Languages</h2>
+      <ul>
+        <li class="lang-it"><span class="label">Italiano:</span> madrelingua</li>
+        <li class="lang-en" style="display:none;"><span class="label">Italian:</span> native</li>
+
+        <li class="lang-it"><span class="label">Inglese:</span> C1</li>
+        <li class="lang-en" style="display:none;"><span class="label">English:</span> C1</li>
+
+        <li class="lang-it"><span class="label">Spagnolo:</span> B1</li>
+        <li class="lang-en" style="display:none;"><span class="label">Spanish:</span> B1</li>
+      </ul>
+    </section>
+
+    <section class="cv-certifications">
+      <h2 class="lang-it">Certificazioni</h2>
+      <h2 class="lang-en" style="display:none;">Certifications</h2>
+      <ul>
+        <li><span class="label">Cisco Certification - CCST</span> Cisco Academy, 2024</li>
+        <li><span class="label">Certificate of Attendance - </span> Foundation Program @ Apple Developer Academy, 2022</li>
+        <li><span class="label">Certificate in Advanced English CEFR, Level C1 - </span>  CLA Università degli Studi di Napoli Federico II, 2022</li>
+
+      </ul>
+    </section>
+
+    <section class="cv-projects">
+      <h2 class="lang-it">Progetti</h2>
+      <h2 class="lang-en" style="display:none;">Projects</h2>
+      <ul>
+        <li class="lang-it"><span class="label">Falling Yogurt:</span> Un gioco che utilizza lo storytelling per sensibilizzare sul tema dello spreco alimentare. Sviluppato con Swift e SpriteKit, in occasione della Swift Student Challenge 2025.</li>
+        <li class="lang-en" style="display:none;"><span class="label">Falling Yogurt:</span> A game that uses storytelling to raise awareness about food waste. Developed with Swift and SpriteKit, for Swift Student Challenge 2025.</li>
+
+        <li class="lang-it"><span class="label">Meowing Melody:</span> Meowing Melody è un gioco che unisce gatti, universo e musica. Sviluppato con Unity e C#, e disponibile per il download su AppStore. </li>
+        <li class="lang-en" style="display:none;"><span class="label">Meowing Melody:</span> Meowing Melody is a game that combines cats, universe and music. Developed with Unity and C# and available for download on AppStore. </li>
+
+        <li class="lang-it"><span class="label">PrismCamera:</span> PrismCamera è un'app fotocamera che elabora l'immagine in ingresso per creare un effetto di visione sdoppiata. Sviluppata in Swift, in occasione della Swift Student Challenge 2024.</li>
+        <li class="lang-en" style="display:none;"><span class="label">PrismCamera:</span> PrismCamera is a basic camera app that processes the input image to create a double vision effect. Developed with Swift, for Swift Student Challenge 2024. </li>
+      </ul>
+    </section>
+
+  </div>
+</body>

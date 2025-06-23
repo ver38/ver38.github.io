@@ -3,10 +3,10 @@ layout: default
 title: Scrum Portfolio
 ---
 
-<h1>Scrum Portfolio</h1>
+<h1 class="scrum-page-title">Scrum Portfolio</h1>
 
 <div class="cv-section scrum-portfolio-list" style="max-width:900px; margin:auto;">
-  <h2 class="scrum-toc-title"> Table of Contents:</h2>
+  <!-- <h2 class="scrum-toc-title"> Table of Content:</h2> -->
   <ul class="scrum-posts">
     {% assign scrum_posts = site.posts | where_exp:"post","post.layout == 'scrum-post'" | sort: 'date' | reverse %}
     {% for post in scrum_posts %}
